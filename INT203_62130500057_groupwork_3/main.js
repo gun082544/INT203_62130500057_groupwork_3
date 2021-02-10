@@ -15,9 +15,11 @@ const app = {
         }
     },
     computed:{
-        countShow(){
-            // return this.pictures.filter(s => s.showFav).length;
+        countTotal(){
             return this.pictures.length;
+        },
+        countShow(){
+            return this.pictures.filter(s => s.showFav).length;
         }
     }
 };

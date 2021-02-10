@@ -16,7 +16,8 @@ const app = {
     },
     computed:{
         countShow(){
-            return this.pictures.filter(s => s.showFav).length;
+            // return this.pictures.filter(s => s.showFav).length;
+            return this.pictures.length;
         }
     }
 };
